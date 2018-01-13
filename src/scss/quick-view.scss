@@ -24,7 +24,7 @@ $media-queries: true;
 .quick-view-button {
     display: none;
 
-    @media screen and (min-width: $breakpoint-medium) {
+    // @media screen and (min-width: $breakpoint-medium) {
         @include rem(padding, 10px 20px);
         background-color: map-get($brand-color, 'black');
         color: map-get($brand-color, 'white');
@@ -34,13 +34,13 @@ $media-queries: true;
         opacity: 0;
         text-transform: uppercase;
         transition: opacity .5s ease-out;
-    }
+    // }
 }
 
 .quick-view-modal {
     display: none;
 
-    @media screen and (min-width: $breakpoint-medium) {
+    // @media screen and (min-width: $breakpoint-medium) {
         bottom: 0;
         left: 0;
         position: fixed;
@@ -51,7 +51,7 @@ $media-queries: true;
         &.is-active {
             display: block;
         }
-    }
+    // }
 }
 
 .quick-view-canvas {
